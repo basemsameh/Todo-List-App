@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo List</title>
+</head>
+
+<body class="bg-info">
+  <main class="mt-5">
+    <!-- Section -->
+    <section class="container-fluid m-auto bg-white p-3 px-5 rounded-2 shadow">
+      <div class="inputs pb-5">
+        <h1 class="text-center mb-4">Todo List App</h1>
+        <div class="row align-items-center">
+          <input class="rounded-2 border py-2 col-12 col-lg-8" type="text" id="taskName" name="taskName"
+            placeholder="Task Name" required autofocus>
+          <button class="btn btn-info py-2 col-12 col-lg-4 m-auto text-white" id="addTask">Add Task</button>
+        </div>
+      </div>
+      <!-- Table -->
+      <table class="table m-auto ">
+        <thead>
+          <th>Done</th>
+          <th>Your Task</th>
+          <th>Actions</th>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Number of finished tasks:</td>
+            <td id="doneTasks">0</td>
+          </tr>
+          <tr>
+            <td colspan="2">Number of all tasks:</td>
+            <td id="allTasks">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
